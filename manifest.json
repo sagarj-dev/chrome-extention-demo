@@ -17,7 +17,11 @@
     "service_worker": "background.js"
   },
   "content_scripts": [
-    { "matches": ["*://*.saucedemo.com/*"], "js": ["./contentScript.js"] }
+    {
+      "matches": ["*://*.saucedemo.com/*"],
+      "run_at": "document_end",
+      "js": ["./contentScript.js", "./scripts/require.js"]
+    }
   ],
   "host_permissions": ["*://*.saucedemo.com/*"],
   "permissions": ["tabs"]
