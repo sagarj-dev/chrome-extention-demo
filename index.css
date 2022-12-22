@@ -1,0 +1,20 @@
+body {
+  width: 600px;
+  padding: 1rem 0;
+}
+
+.productpageButtons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.productpageButtons button {
+  width: 100%;
+}
+
+.checkoutPage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
